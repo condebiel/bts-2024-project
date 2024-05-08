@@ -17,11 +17,20 @@ git add <filename>
 ```bash
 git branch
 ```
-### create a new branch
+### create a new branch - 1
 ```bash
 git checkout -b <branchname>
 ```
 ### return to another branch
 ```bash
 git checkout <branchname>
+```
+### push commits to origin
+```bash
+git push origin <branchname>
+```
+### get lastest changes from origin
+```bash
+git pull
+git pull origin <branchname>
 ```
