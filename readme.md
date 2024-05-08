@@ -12,3 +12,16 @@ git init
 ```bash
 git add <filename>
 ```
+
+# list branchs
+```bash
+git branch
+```
+# create a new branch
+```bash
+git checkout -b <branchname>
+```
+# return to another branch
+```bash
+git checkout <branchname>
+```
