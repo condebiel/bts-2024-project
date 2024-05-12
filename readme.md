@@ -34,6 +34,7 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+<<<<<<< HEAD
 
 ### Commit staged changes with a descriptive message
 ```bash
@@ -64,3 +65,5 @@ git revert <commit hash>
 ```bash
 git diff
 ```
+=======
+>>>>>>> 0000b08c7471781d85f2be3d16c3a2d1b6fc445f
