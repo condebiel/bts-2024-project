@@ -59,3 +59,8 @@ git remote
 ```bash
 git revert <commit hash>
 ```
+
+### Show the differences between the working directory, staging area, and the last commit
+```bash
+git diff
+```
