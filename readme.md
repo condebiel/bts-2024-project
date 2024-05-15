@@ -1,5 +1,10 @@
 # BTS PROJECT
 
+## Table of Contents
+- Item 1
+- Item 2
+- Item 3
+
 ## Intro to git
 - git is a version control system
 
