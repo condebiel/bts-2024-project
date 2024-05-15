@@ -34,3 +34,21 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+
+# Alexis's Exercise
+
+This is a brief description of my favorite songs
+
+## Table of Contents
+1. Honk Kong
+2. Runaway
+3. Lost
+
+## Favorite series
+1. Bojack Horseman
+2. Succesion
+3. How I met your mother
+
+## Another Section
+My favorite movie American psycho
+
