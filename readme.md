@@ -3,6 +3,13 @@
 ## Intro to git
 - git is a version control system
 
+### Table of content
+```bash
+item 1
+item 2
+item 3
+```
+
 ### initialize a git repository
 ```bash
 git init 
