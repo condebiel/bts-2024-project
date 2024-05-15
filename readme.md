@@ -5,7 +5,7 @@
 
 ### initialize a git repository
 ```bash
-git init 
+git init
 ```
 
 ### Add files to staging area
@@ -34,3 +34,7 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+<!-- ## Descripción del Proyecto
+Este es un proyecto de desarrollo web que incluye ejemplos y prácticas relacionadas con Git y otros temas.
+
+## Tabla de Contenidos -->
