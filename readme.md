@@ -34,3 +34,17 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+
+# BTS 2024 Git Project
+
+Welcome to the BTS 2024 MDPM Project repository!
+
+## Table of Contents
+
+- [Git](Git/README.md): This section contains information about Git.
+- [Other Section](OtherSection/README.md): Description of another section.
+- [Another Section](AnotherSection/README.md): Description of yet another section.
+
+## Git
+
+This section contains information about Git. You can find detailed information in the [Git README file](Git/README.md).
