@@ -6,6 +6,7 @@
 <h6>b - Eat </h6>
 <h6>c - Go to gym </h6>
 <h6>d - Coding </h6>
+<img width="200" alt="Screenshot 2024-05-15 at 23 07 04" src="https://github.com/condebiel/bts-2024-project/assets/169616225/bd1b4ae3-8fbc-4e45-aa12-2454f20a0f1b">
 
 ## Intro to git
 - git is a version control system
