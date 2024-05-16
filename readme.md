@@ -1,5 +1,34 @@
 # BTS PROJECT
 
+## Table of Contents branch maxzrhbcn
+```bash
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+
+## Introduction
+
+This is the introduction section.
+
+## Installation
+
+Instructions for installing the project go here.
+
+## Usage
+
+How to use the project is explained here.
+
+## Contributing
+
+Guidelines for contributing to the project.
+
+## License
+
+Information about the project's license.
+```
+
 ## Intro to git
 - git is a version control system
 
