@@ -45,3 +45,18 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+
+
+## Popular Beaches in Barcelona
+
+
+### 1. Barceloneta Beach
+[View Barceloneta Beach on Google Maps](https://goo.gl/maps/N1Exnyj8o5s)
+
+
+### 2. Bogatell Beach
+[View Bogatell Beach on Google Maps](https://goo.gl/maps/jZg9sLx1QpQ2)
+
+
+### 3. Mar Bella Beach
+[View Mar Bella Beach on Google Maps](https://goo.gl/maps/e8vjC1Q1DE52)
