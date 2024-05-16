@@ -1,0 +1,737 @@
+Last login: Thu May 16 09:22:00 on ttys000
+max_macbookair2024@Maxs-MacBook-Air ~ % cd bts-2024-project
+cd: no such file or directory: bts-2024-project
+max_macbookair2024@Maxs-MacBook-Air ~ % git clone https://github.com/condebiel/bts-2024-project.git
+Cloning into 'bts-2024-project'...
+remote: Enumerating objects: 86, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 86 (delta 17), reused 9 (delta 5), pack-reused 56
+Receiving objects: 100% (86/86), 23.15 KiB | 677.00 KiB/s, done.
+Resolving deltas: 100% (21/21), done.
+max_macbookair2024@Maxs-MacBook-Air ~ % cd bts-2024-project
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git checkout -b maxzrhbcn 
+Switched to a new branch 'maxzrhbcn'
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/condebiel/bts-2024-project.git
+   0000b08..6a2af34  maxzrhbcn -> maxzrhbcn
+branch 'maxzrhbcn' set up to track 'origin/maxzrhbcn'.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add maxzrhbcn.txt
+fatal: pathspec 'maxzrhbcn.txt' did not match any files
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % /Users/maxhismacbook_1/Desktop/bts-2024-project
+zsh: permission denied: /Users/maxhismacbook_1/Desktop/bts-2024-project
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % cd /Users/maxhismacbook_1/Desktop/bts-2024-project
+zsh: permission denied: /Users/maxhismacbook_1/Desktop/bts-2024-project
+zsh: command not found: zsh:
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add .
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch is up to date with 'origin/maxzrhbcn'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   maxzrhbcn.txt
+	modified:   readme.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add maxzrhbcn.txt
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git restore --staged maxzrh.txt
+error: pathspec 'maxzrh.txt' did not match any file(s) known to git
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git restore --staged maxzrhbcn.txt
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch is up to date with 'origin/maxzrhbcn'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	modified:   readme.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	maxzrhbcn.txt
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add maxzrhbcn
+fatal: pathspec 'maxzrhbcn' did not match any files
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add maxzrhbcn.txt
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch is up to date with 'origin/maxzrhbcn'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   maxzrhbcn.txt
+	modified:   readme.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m "Assignment Maxx"         
+[maxzrhbcn ebc5086] Assignment Maxx
+ 3 files changed, 36 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 maxzrhbcn.txt
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin main
+From https://github.com/condebiel/bts-2024-project
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % 
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config pull.rebase false  # merge
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin main
+From https://github.com/condebiel/bts-2024-project
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch is ahead of 'origin/maxzrhbcn' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin maxzrhbcn
+From https://github.com/condebiel/bts-2024-project
+ * branch            maxzrhbcn  -> FETCH_HEAD
+   0000b08..6a2af34  maxzrhbcn  -> origin/maxzrhbcn
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config pull.ff only       # fast-forward only
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin maxzrhbcn
+
+From https://github.com/condebiel/bts-2024-project
+ * branch            maxzrhbcn  -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 1 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add .DS_Store
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 1 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m "Assignment Max"          
+[maxzrhbcn 624b915] Assignment Max
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push origin maxzrhbcn  
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin main
+From https://github.com/condebiel/bts-2024-project
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config pull.rebase true   # rebase
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add .
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git statusgit status
+git: 'statusgit' is not a git command. See 'git --help'.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 2 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin main
+From https://github.com/condebiel/bts-2024-project
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git remote add origin 'https://github.com/condebiel/bts-2024-project.git'
+error: remote origin already exists.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add . 
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 2 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % 
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m 'Assignment Maxx'
+[maxzrhbcn 76c0b8c] Assignment Maxx
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push -u origin maxzrhbcn
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % $ git push -d origin specific-feature
+zsh: command not found: $
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % $ git push origin specific-feature
+zsh: command not found: $
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull --rebase
+
+error: cannot pull with rebase: You have unstaged changes.
+error: please commit or stash them.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m "assignment Maxx"         
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 3 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config pull.ff only       # fast-forward only
+
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add .
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git status
+On branch maxzrhbcn
+Your branch and 'origin/maxzrhbcn' have diverged,
+and have 3 and 8 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pullgit pull
+git: 'pullgit' is not a git command. See 'git --help'.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config --global  pull.rebase false  # merge
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config --global  pull.ff only       # fast-forward only
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git config --global  pull.ff true
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull
+error: Your local changes to the following files would be overwritten by merge:
+  .DS_Store
+Merge with strategy ort failed.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git add .
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m "assignment Max"          
+[maxzrhbcn d9c00c5] assignment Max
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push origin branch_name
+error: src refspec branch_name does not match any
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push origin maxzrhbcn  
+To https://github.com/condebiel/bts-2024-project.git
+ ! [rejected]        maxzrhbcn -> maxzrhbcn (non-fast-forward)
+error: failed to push some refs to 'https://github.com/condebiel/bts-2024-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull 
+Auto-merging readme.md
+hint: Waiting for your editor to close the file... code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Not committing merge; use 'git commit' to complete the merge.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git commit -m "assignment Max"
+[maxzrhbcn aa7a78a] assignment Max
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git push origin maxzrhbcn  
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 2.32 KiB | 2.32 MiB/s, done.
+Total 17 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+To https://github.com/condebiel/bts-2024-project.git
+   6a2af34..aa7a78a  maxzrhbcn -> maxzrhbcn
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % git pull origin maxzrhbcn
+From https://github.com/condebiel/bts-2024-project
+ * branch            maxzrhbcn  -> FETCH_HEAD
+Already up to date.
+max_macbookair2024@Maxs-MacBook-Air bts-2024-project % 
