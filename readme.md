@@ -34,3 +34,30 @@ git push origin <branchname>
 git pull
 git pull origin <branchname>
 ```
+
+### View a history of commits in the repository
+```bash
+git log
+```
+
+### Merge changes from a specified branch into the current branch
+```bash
+git merge <branch name>
+```
+
+### List remote repositories associated with your local repository
+```bash
+git remote
+```
+
+### Create a new commit that undoes the changes introduced by a specific commit
+```bash
+git revert <commit hash>
+```
+
+### Show the differences between the working directory, staging area, and the last commit
+```bash
+git diff
+```
+### Adding new lines
+
