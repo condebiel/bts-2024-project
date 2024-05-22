@@ -2,7 +2,7 @@
 	<!-- Navigation -->
 	<nav class="bg-white p-6 shadow-md">
 			<div class="container mx-auto flex justify-between items-center">
-					<a class="text-lg font-bold text-gray-800 hover:text-gray-600" href="#">My Ecommerce Store</a>
+					<a class="text-lg font-bold text-gray-800 hover:text-gray-600" href="#">BTS project Ecommerce Store</a>
 					<ul class="flex space-x-4">
 							<li>
 								<a class="text-gray-800 hover:text-gray-600" href="#">Home</a>
