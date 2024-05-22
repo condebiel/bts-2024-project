@@ -2,5 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@zadigetvoltaire/nuxt-gtm',
+  ],
+
+  gtm: {
+    id: 'GTM-5SLQ8434',
+    debug: true,
+  },
 })
