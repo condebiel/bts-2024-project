@@ -9,7 +9,7 @@
 							</li>
 							<li><a class="text-gray-800 hover:text-gray-600" href="#">Shop</a></li>
 							<li><a class="text-gray-800 hover:text-gray-600" href="#">About</a></li>
-							<li><a class="text-gray-800 hover:text-gray-600" href="#">Contact</a></li>
+							<li><a class="text-gray-800 hover:text-gray-600" href="/contact-form">Contact</a></li>
 					</ul>
 			</div>
 	</nav>
