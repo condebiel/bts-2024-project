@@ -1,3 +1,5 @@
+const STORYBLOK_TOKEN = 'uyavMjFjmJeQrdX5XaZZfwtt'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -5,6 +7,15 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@zadigetvoltaire/nuxt-gtm',
+    [
+      '@storyblok/nuxt',
+      {
+        accessToken: STORYBLOK_TOKEN,
+        apiOptions: {
+           region: '' // Set 'US" if your space is created in US region (EU default)
+        }
+      },
+    ],
   ],
 
   gtm: {
