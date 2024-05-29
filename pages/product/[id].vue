@@ -1,15 +1,20 @@
 <script setup>
 import ProductsCard from '@/components/ProductsCard.vue'
 
+const route = useRoute()
+
 const config = useRuntimeConfig()
 const { apiBase } = config.public
 
-const products = ref([])
+const product = ref({})
+
+// When accessing /posts/1, route.params.id will be 1
+const productId = route.params.id
 
 async function fetchProducts() {
-    const { data } = await useFetch(`${apiBase}/api/products/`)
-    console.log(data.value.products)
-    products.value = data.value.products
+    const { data } = await useFetch(`${apiBase}/api/products/${productId}`)
+    console.log(data.value[0])
+    product.value = data.value[0]
 }
 
 onMounted(async () => {
@@ -19,9 +24,6 @@ onMounted(async () => {
 </script>
 
 <template>
-    <!-- <pre>
-        {{ products }}
-    </pre> -->
 
     <!-- Navigation -->
     <nav class="bg-white p-6 shadow-md">
@@ -41,12 +43,7 @@ onMounted(async () => {
         <div class="container mx-auto">
             <h2 class="text-2xl font-bold text-gray-800 mb-8">Products</h2>
             <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-                <li 
-                    v-for="(product, key) in products" 
-                    :key="key"
-                >
-                    <ProductsCard :product="product" />
-                </li>
+                <ProductsCard :product="product" />
             </ul>
         </div>
     </section>

@@ -11,4 +11,10 @@ export default defineNuxtConfig({
     id: 'GTM-5SLQ8434',
     debug: true,
   },
+
+  runtimeConfig: {
+    public: {
+      apiBase: 'http://localhost:3000',
+    },
+  },
 })
