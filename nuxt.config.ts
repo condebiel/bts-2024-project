@@ -4,19 +4,15 @@ const STORYBLOK_TOKEN = 'uyavMjFjmJeQrdX5XaZZfwtt'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@zadigetvoltaire/nuxt-gtm',
-    [
-      '@storyblok/nuxt',
-      {
-        accessToken: STORYBLOK_TOKEN,
-        apiOptions: {
-           region: '' // Set 'US" if your space is created in US region (EU default)
-        }
-      },
-    ],
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@zadigetvoltaire/nuxt-gtm', [
+    '@storyblok/nuxt',
+    {
+      accessToken: STORYBLOK_TOKEN,
+      apiOptions: {
+         region: '' // Set 'US" if your space is created in US region (EU default)
+      }
+    },
+  ], "@vite-pwa/nuxt"],
 
   gtm: {
     id: 'GTM-5SLQ8434',
